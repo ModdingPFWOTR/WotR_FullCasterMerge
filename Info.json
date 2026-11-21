@@ -1,0 +1,14 @@
+{
+  "Id": "FullCasterMerge",
+  "DisplayName": "Full Caster Merge",
+  "Author": "Picninim piq",
+  "Version": "0.1.0",
+  "ManagerVersion": "0.23.0",
+  "GameVersion": "2.7.0",
+  "Requirements": [],
+  "LoadAfter": [],
+  "AssemblyName": "FullCasterMerge.dll",
+  "EntryMethod": "FullCasterMerge.Main.Load",
+  "HomePage": "",
+  "Repository": ""
+}
