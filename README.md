@@ -1,30 +1,30 @@
 # Full Caster Merge
 
-Mod de Unity Mod Manager para Pathfinder: Wrath of the Righteous.
+Unity Mod Manager mod for Pathfinder: Wrath of the Righteous.
 
-Funde o spellbook de um caminho mítico no spellbook de qualquer classe. O livro fundido deixa de usar o teto da classe e passa a usar a progressão de um conjurador completo.
+It merges a mythic path spellbook into any class spellbook. The merged book stops using the class spell ceiling and follows full-caster progression instead.
 
-## O que muda
+## What it changes
 
-- No menu do UMM, com um save carregado, cada personagem lista o livro da classe e o livro mítico separado. O botão funde os dois.
-- Caster level continua sendo o da classe mais o mythic rank, como no merge do jogo e do Toybox.
-- Se o livro da classe parava antes do 9º círculo, os slots de círculo 1 a 9 passam a seguir a tabela de um full caster. Livro espontâneo usa a tabela de feiticeiro/oráculo. Livro preparado usa a de mago/clérigo.
-- A lista de magias da classe não é trocada. Um Inquisitor não aprende a lista de Clérigo. O que entra nos círculos novos são as magias do livro mítico.
-- Um livro que já era full caster, como Clérigo ou Mago, não tem a tabela substituída.
-- O 10º círculo só abre se o personagem tiver a feature do jogo que libera magia de nível 10. Sem isso, o teto é o 9º.
-- Um merge já feito pelo Toybox também recebe essa progressão ao carregar o save. Não precisa fundir de novo.
+- With a save loaded, the UMM menu lists each character's class book and any separate mythic book. A button merges the two.
+- Caster level stays the class caster level plus mythic rank, the same way the game and ToyBox count a merge.
+- If the class book stopped before 9th circle, circles 1 through 9 follow a full-caster table. Spontaneous books use the sorcerer/oracle table. Prepared books use the wizard/cleric table.
+- The class spell list is left alone. An Inquisitor does not learn the Cleric list. Spells that fill the new circles come from the mythic book.
+- A book that was already a full caster, such as Cleric or Wizard, keeps its own table.
+- 10th circle opens only if the character has the game feature that unlocks 10th-level spells. Without it, the ceiling is 9th.
+- A merge already done in ToyBox picks up this progression when the save loads. You do not need to merge again.
 
-## Instalação
+## Install
 
-1. Instale o Unity Mod Manager e aplique no Wrath of the Righteous.
-2. Compile com `dotnet build`, ou copie `FullCasterMerge.dll` e `Info.json` para `<jogo>\Mods\FullCasterMerge`.
-3. Abra o jogo, confirme o mod no UMM e carregue o save.
-4. Salve antes de fundir. O merge fica no personagem e este menu não desfaz.
+1. Install Unity Mod Manager and apply it to Wrath of the Righteous.
+2. Build with `dotnet build`, or copy `FullCasterMerge.dll` and `Info.json` into `<game>\Mods\FullCasterMerge`.
+3. Start the game, confirm the mod in UMM, and load a save.
+4. Save before merging. The merge is stored on the character, and this menu does not undo it.
 
-O build copia o mod para a pasta Mods do jogo.
+A successful build copies the mod into the game's Mods folder.
 
-## Limites
+## Limits
 
-Desligar o mod não desfaz o merge. Os círculos extras somem enquanto o mod estiver desligado, porque a tabela da classe continua a original, e voltam quando o mod é ligado de novo.
+Turning the mod off does not undo the merge. Extra circles disappear while the mod is off, because the class table is still the original one, and they come back when the mod is turned on again.
 
-Círculos novos de um livro espontâneo começam cheios se o pool daquele círculo estiver em zero. Descansar no jogo também enche o pool. Livro preparado ganha slots vazios para memorizar.
+New circles on a spontaneous book start full when that circle's pool is zero. Resting in game also refills the pool. A prepared book gains empty slots to memorize.
